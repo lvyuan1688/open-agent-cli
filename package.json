@@ -1,0 +1,39 @@
+{
+  "name": "open-agent-cli",
+  "version": "0.1.0",
+  "description": "Open-source coding-agent CLI for cloud and local model providers. Inspired by OpenClaude.",
+  "license": "MIT",
+  "author": "lvyuan1688",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvyuan1688/open-agent-cli.git"
+  },
+  "keywords": ["ai", "agent", "coding-agent", "cli", "mcp", "grpc"],
+  "main": "dist/cli.js",
+  "bin": {
+    "open-agent-cli": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "test": "bun test",
+    "serve": "ts-node src/grpc/server.ts"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.0",
+    "@grpc/proto-loader": "^0.7.0",
+    "commander": "^12.0.0",
+    "openai": "^4.50.0",
+    "@anthropic-ai/sdk": "^0.25.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "bun-types": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
