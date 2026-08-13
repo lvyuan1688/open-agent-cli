@@ -1,0 +1,17 @@
+[package]
+name = "open-agent-cli"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Open-source coding-agent CLI with gRPC headless mode"
+repository = "https://github.com/lvyuan1688/open-agent-cli"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"
+prost = "0.13"
+
+[[bin]]
+name = "open-agent-cli"
+path = "src/main.rs"
