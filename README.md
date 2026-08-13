@@ -70,6 +70,24 @@ open-agent-cli serve
 open-agent-cli tui
 ```
 
+## Demo
+
+```
+┌─ open-agent-cli (headless server :50051) ─────────────────────┐
+│ Session 1: "refactor auth.rs to async"                         │
+│   ▶ Thinking  →  Acting (edit_file auth.rs)                   │
+│   ▶ Verifying (cargo build)...  ✓ pass                         │
+│   ▶ Done: refactored 3 functions to async                     │
+│                                                                │
+│ Session 2: "add unit test for auth"  (parallel, isolated)     │
+│   ▶ Thinking  →  Acting (write tests/auth_test.rs)           │
+│   ▶ Verifying (cargo test)...  ✓ 3 tests pass                 │
+│   ▶ Done: added 3 unit tests                                  │
+│                                                                │
+│ gRPC stream: live tool calls → IDE/CI client                  │
+└────────────────────────────────────────────────────────────────┘
+```
+
 ## License
 
 MIT
