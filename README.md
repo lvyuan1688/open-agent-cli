@@ -1,5 +1,7 @@
 # open-agent-cli
 
+![Demo](docs/demo.png)
+
 > Open-source coding-agent CLI for cloud and local model providers.
 > Inspired by [OpenClaude](https://github.com/Gitlawb/openclaude) (30k+ stars), rewritten from scratch with a stronger gRPC headless layer and lighter CLI core.
 
